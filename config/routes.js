@@ -20,7 +20,7 @@
  * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
  */
 
-module.exports.routes = {
+module.exports.routes = require("../api/services/UrlLib")();
 
   /***************************************************************************
   *                                                                          *
@@ -31,10 +31,10 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-  '/': {
-    view: 'homepage'
-  }
+  //
+  //'/': {
+  //  view: 'homepage'
+  //}
 
   /***************************************************************************
   *                                                                          *
@@ -46,4 +46,4 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-};
+
